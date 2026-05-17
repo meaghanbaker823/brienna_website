@@ -73,6 +73,7 @@ nav {
 	padding: 1rem ;
 	max-width: 20000px;
 	margin: 0 auto;
+
 }
 
 .nav-links {
@@ -133,7 +134,7 @@ nav {
 
 
 .video_block {
-	margin: 2rem;
+	margin-top: 2rem;
 	border-radius: 0.75rem;
 	border-style: solid;
 	border-width: 1px;
@@ -148,4 +149,15 @@ nav {
 	padding: 0.25rem;
 	display: inline-flexbox;
 	width: 6rem;
+}
+
+/*small screen adjustments*/
+@media screen and (max-width: 650px){
+	.nav-links{
+		flex-direction: column;
+	}
+	.video_blocks{
+		margin-top: 12rem;
+	}
+	
 }

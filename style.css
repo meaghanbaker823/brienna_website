@@ -1,6 +1,5 @@
 @charset "utf-8";
 
-
 :root {
 	--primary: #431c6a;
 	--secondary: #49498b;
@@ -19,6 +18,8 @@ body {
 	color: var(--light);
 	overflow-x: hidden;
 	line-height: 1.6;
+	margin: 0px;
+	padding: 0px;
 }
 
 @keyframes pulse {
@@ -66,6 +67,7 @@ header {
 
 nav {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
 	padding: 1rem ;
@@ -88,6 +90,7 @@ nav {
 	border-radius: 25px;
 	font-weight: 500;
 	font-size: 0.95rem;
+	text-align: center;
 }
 
 .nav-links a:hover {
@@ -120,26 +123,29 @@ nav {
 .video_blocks {
 	display: flex;
 	flex-wrap: wrap;
-	padding: 4.3rem;
-	gap: 20px;
+	padding: 4rem;
+	gap: 1rem;
 	justify-content: center;
 	background: linear-gradient(#49498b, #0c0f61);
+	padding-top: 8rem;
+	margin-top: 4rem;
 }
 
 
 .video_block {
-	border-radius: 5px;
+	margin: 2rem;
+	border-radius: 0.75rem;
 	border-style: solid;
-	border-width: 3px;
+	border-width: 1px;
 	border-color: #24083d;
 	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+	background-color: black;
 }
 
 .video_block p{
 	text-align: center;
 	justify-self: center;
-	padding: 2px;
+	padding: 0.25rem;
 	display: inline-flexbox;
-	background-color: #49498b;
-	width: 100px;
+	width: 6rem;
 }

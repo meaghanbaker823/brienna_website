@@ -64,7 +64,10 @@ header {
 	transition: all 0.3s ease;
 	border-bottom: 1px solid rgba(186, 12, 12, 0);
 }
-
+.brienna_title{
+	color: #ffffff;
+	text-decoration: none;
+}
 nav {
 	display: flex;
 	flex-wrap: wrap;
@@ -118,6 +121,13 @@ nav {
 .btn-primary:hover {
 	transform: translateY(-2px);
 	box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
+}
+
+/*home page headshot and resume*/
+.home_pic_and_res{
+	margin-top: 11rem;
+	display: flex;
+	flex-wrap: wrap;
 }
 
 /*media page*/
@@ -176,4 +186,7 @@ nav {
 		margin-top: 20rem;
 	}
 	
+	.home_pic_and_res{
+	margin-top: 20rem;
+}
 }

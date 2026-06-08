@@ -76,6 +76,12 @@ body {
 	letter-spacing: 0.25rem;
 	font-size:x-large;
 }
+
+.page_description{
+	margin-top: 4%;
+	padding: 2%;
+	text-align: center;
+}
 /* Header */
 header {
 	position: fixed;
@@ -192,6 +198,39 @@ nav {
 	width: 50%;
 	margin: 2%;
 	font-size: large;
+}
+/* on the stage page */
+.on_the_stage_posts{
+	display: flex;
+	flex-wrap: wrap;
+	background: linear-gradient(#401257, #0c0f61);
+	border-bottom: black 8px solid;
+}
+
+.stage_post{
+	display: flex;
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
+.stage_text{
+	width: 48%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	text-align: center;
+	transition: backdrop-filter 0.2s ease;
+
+}
+
+.stage_text:hover{
+	backdrop-filter: brightness(125%);
+}
+
+.stage_post img{
+	width: 48%;
+	align-self: center;
 }
 
 /*media page*/

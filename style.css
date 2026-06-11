@@ -78,9 +78,12 @@ body {
 }
 
 .page_description{
-	margin-top: 4%;
+	margin-top: 2%;
+	margin-left: 8%;
+	margin-right: 8%;
 	padding: 2%;
 	text-align: center;
+	font-size: larger;
 }
 /* Header */
 header {
@@ -214,13 +217,15 @@ nav {
 }
 
 .stage_text{
-	width: 48%;
+	width: 45%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	text-align: center;
 	transition: backdrop-filter 0.2s ease;
+	padding-left: 3%;
+	padding-right: 3%;
 
 }
 
@@ -229,7 +234,7 @@ nav {
 }
 
 .stage_post img{
-	width: 48%;
+	width: 45%;
 	align-self: center;
 }
 

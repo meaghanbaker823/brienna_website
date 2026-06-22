@@ -227,7 +227,7 @@ nav {
 
 }
 
-.stage_post button{
+.stage_text button{
 	all: unset;
 	align-self: self-end;
 	cursor: pointer;
@@ -238,9 +238,7 @@ nav {
 
 }
 
-
-
-.stage_post:hover{
+.stage_text:hover{
 	backdrop-filter: brightness(125%);
 }
 

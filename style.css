@@ -206,8 +206,6 @@ nav {
 .on_the_stage_posts{
 	display: flex;
 	flex-wrap: wrap;
-	background: linear-gradient(#401257, #0c0f61);
-	border-bottom: black 8px solid;
 }
 
 .stage_post{
@@ -258,9 +256,7 @@ nav {
 	justify-items: center;
 	display: none;
 }
-/*#hidden-legally-blonde{
-	display: none;
-}*/
+
 .hidden-text{
 	width: 70%;
 	justify-content: center;

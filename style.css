@@ -205,23 +205,27 @@ nav {
 /* on the stage page */
 .on_the_stage_posts{
 	display: flex;
-	flex-wrap: wrap;
+	flex-direction: column;
 }
-
+.entire_stage_post{
+	display: flex;
+	flex-direction: column;
+	max-height: none;
+	width: 100%;
+}
 .stage_post{
 	display: flex;
 	margin-top: 2%;
 	margin-bottom: 2%;
+	transition: backdrop-filter 0.2s ease;
 }
 
 .stage_text{
 	width: 45%;
 	display: flex;
-	justify-content: center;
-	align-items: center;
 	flex-direction: column;
+	align-self: center;
 	text-align: center;
-	transition: backdrop-filter 0.2s ease;
 	padding-left: 3%;
 	padding-right: 3%;
 
@@ -238,9 +242,10 @@ nav {
 
 }
 
-.stage_text:hover{
+.stage_post:hover{
 	backdrop-filter: brightness(125%);
 }
+
 
 .stage_post img{
 	width: 45%;
@@ -248,8 +253,6 @@ nav {
 }
 
 .hidden{
-	display: flex;
-	flex-wrap: wrap;
 	flex-direction: column;
 	justify-items: center;
 	display: none;
@@ -279,6 +282,7 @@ nav {
 	width: 40%;
 	align-self: center;
 	margin: 2%;
+	outline: black solid 3px;
 }
 
 .hidden button{

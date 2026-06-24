@@ -155,6 +155,20 @@ nav {
 	box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
 }
 
+.go-to-resume{
+	all: unset;
+	cursor: pointer;
+	display: flex;
+	border-radius: 3%;
+	padding: 3%;
+	text-align: center;
+	justify-self: center;
+	padding: 2%;
+	margin-top: 2%;
+	outline: solid var(--secondary) 2px;
+
+}
+
 /*home page headshot and resume*/
 .home_pic_and_res{
 	display: flex;

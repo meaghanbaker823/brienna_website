@@ -20,6 +20,9 @@ body {
 	line-height: 1.6;
 	margin: 0px;
 	padding: 0px;
+	font-size: clamp(16px, 1rem + 0.5vw, 20px);
+  	line-height: 1.6;
+  	letter-spacing: 0.03em;
 }
 
 @keyframes pulse {
@@ -56,25 +59,31 @@ body {
 .page_title {
 	color: #ffffff;
 	background-color: #24083d;
-	margin-top: 10rem;
+	margin-top: 19vmin;
 	width: 100%;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+	padding-top: 4vmin;
+	padding-bottom: 4vmin;
 	text-align: center;
 	letter-spacing: 0.25rem;
-	font-size:x-large;
+	font-size: calc(1em + 2vmin);
 	border-bottom: #180621 0.25rem solid;
 
 }
 .subsection_title{
 	color: #ffffff;
-	margin-top: 5%;
-	width: 100%;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
+	width: 100vw;
+	margin-top: 6%;
 	text-align: center;
 	letter-spacing: 0.25rem;
-	font-size:x-large;
+	font-size: clamp(25px, (1.5em + 2vmin), 40px);
+}
+
+.smaller_subsection_title{
+	color: #ffffff;
+	padding-left: 2%;
+	letter-spacing: 0.25rem;
+	font-size: clamp(16px, (1.3em + 2vmin), 30px);
+                
 }
 
 .page_description{
@@ -83,7 +92,8 @@ body {
 	margin-right: 8%;
 	padding: 2%;
 	text-align: center;
-	font-size: larger;
+	font-size: clamp(16px, 1.2rem + 0.5vw, 24px);
+	line-height: 2.2rem;
 }
 /* Header */
 header {
@@ -176,7 +186,7 @@ nav {
 }
 
 .home_imgs{
-	margin-top: 1rem;
+	margin-top: 0.5vh;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -206,6 +216,7 @@ nav {
 	align-self: center;
 }
 
+
 /* what I've done recently */
 .done_recently{
 	display: flex;
@@ -214,7 +225,6 @@ nav {
 .done_recently_item{
 	width: 50%;
 	margin: 2%;
-	font-size: large;
 }
 /* on the stage page */
 .on_the_stage_posts{
@@ -242,6 +252,7 @@ nav {
 	text-align: center;
 	padding-left: 3%;
 	padding-right: 3%;
+	font-size: clamp(16px, (1em + 0.5vmin), 30px);
 
 }
 
@@ -253,6 +264,7 @@ nav {
 	padding: 2%;
 	outline: 2px solid var(--secondary);
 	transform: scale(0.75);
+	font-size: clamp(16px, (1em + 0.5vmin), 30px);
 
 }
 
@@ -264,6 +276,7 @@ nav {
 .stage_post img{
 	width: 45%;
 	align-self: center;
+	border-radius: 1%;
 }
 
 .hidden{
@@ -281,6 +294,9 @@ nav {
 	text-align: center;
 	padding-left: 3%;
 	padding-right: 3%;
+	margin: 2%;
+	font-size: clamp(16px, (1em + 0.5vmin), 30px);
+	line-height: 2.5rem;
 
 }
 
@@ -296,7 +312,8 @@ nav {
 	width: 40%;
 	align-self: center;
 	margin: 2%;
-	outline: black solid 3px;
+	outline: black solid 5px;
+	border-radius: 1%;
 }
 
 .hidden button{
@@ -307,28 +324,24 @@ nav {
 	padding: 2%;
 	outline: 2px solid var(--secondary);
 	transform: scale(0.75);
+	font-size: clamp(16px, (1em + 0.5vmin), 30px);
 }
 /*media page*/
 .video_blocks {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1rem;
+	gap: 2%;
 	justify-content: center;
-	background: linear-gradient(#401257, #0c0f61);
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-
+	padding-bottom: 2%;
 }
 
 
 .video_block {
-	margin-top: 1rem;
-	padding-left: 3rem;
-	padding-right: 3rem;
-	border-radius: 0.75rem;
-	border-style: solid;
-	border-width: 1px;
-	border-color: #24083d;
+	margin-top: 3%;
+	padding-left: 4%;
+	padding-right: 4%;
+	border-radius: 2%;
+	outline: black 3px solid;
 	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 	background-color: black;
 }
@@ -336,9 +349,11 @@ nav {
 .video_block p{
 	text-align: center;
 	justify-self: center;
-	padding: 0.25rem;
+	padding: 1%;
 	display: inline-flexbox;
-	width: 6rem;
+	width: 100%;
+	font-size: clamp(16px, (1em + 0.5vmin), 20px);
+	
 }
 
 /*small screen adjustments*/
@@ -347,6 +362,6 @@ nav {
 		flex-direction: column;
 	}
 	.page_title{
-		margin-top: 20rem;
+		margin-top: 65%;
 	}
 }

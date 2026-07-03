@@ -20,9 +20,11 @@ body {
 	line-height: 1.6;
 	margin: 0px;
 	padding: 0px;
-	font-size: clamp(16px, 1rem + 0.5vw, 20px);
+	font-size: clamp(16px, 1rem + 0.5vw, 18px);
   	line-height: 1.6;
   	letter-spacing: 0.03em;
+	overflow-wrap: break-word;
+	object-fit: cover;
 }
 
 @keyframes pulse {
@@ -59,7 +61,7 @@ body {
 .page_title {
 	color: #ffffff;
 	background-color: #24083d;
-	margin-top: 19vmin;
+	margin-top: calc(27vmin - 2vw);
 	width: 100%;
 	padding-top: 4vmin;
 	padding-bottom: 4vmin;
@@ -202,7 +204,7 @@ nav {
 	border-radius: 3%;
 	width:45%;
 	margin: 2%;
-	border: solid 2px #24083d;
+	outline: solid 5px var(--darker);
 }
 
 /* about me */
@@ -215,6 +217,10 @@ nav {
 	margin: 2%;
 	align-self: center;
 }
+.about_me img{
+	border-radius: 3%;
+	outline: 5px solid var(--darker);
+}
 
 
 /* what I've done recently */
@@ -225,6 +231,12 @@ nav {
 .done_recently_item{
 	width: 50%;
 	margin: 2%;
+}
+
+.done_recently img{
+	border-radius: 3%;
+	outline: 5px solid var(--darker);
+	max-height: 650px;
 }
 /* on the stage page */
 .on_the_stage_posts{
@@ -277,6 +289,7 @@ nav {
 	width: 45%;
 	align-self: center;
 	border-radius: 1%;
+	outline: var(--darker) solid 5px;
 }
 
 .hidden{
@@ -292,6 +305,7 @@ nav {
 	align-items: center;
 	flex-direction: column;
 	text-align: center;
+	justify-items: center;
 	padding-left: 3%;
 	padding-right: 3%;
 	margin: 2%;
@@ -312,7 +326,7 @@ nav {
 	width: 40%;
 	align-self: center;
 	margin: 2%;
-	outline: black solid 5px;
+	outline: var(--darker) solid 5px;
 	border-radius: 1%;
 }
 
@@ -330,17 +344,19 @@ nav {
 .video_blocks {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 2%;
+	gap: 1rem;
 	justify-content: center;
-	padding-bottom: 2%;
+	padding-bottom: 2rem;
+	margin: 1rem;
 }
 
 
 .video_block {
-	margin-top: 3%;
-	padding-left: 4%;
-	padding-right: 4%;
-	border-radius: 2%;
+	margin-top: 1rem;
+	padding-left: 3rem;
+	padding-right: 3rem;
+	justify-self: center;
+	border-radius: 0.75rem;
 	outline: black 3px solid;
 	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 	background-color: black;
@@ -349,11 +365,15 @@ nav {
 .video_block p{
 	text-align: center;
 	justify-self: center;
-	padding: 1%;
-	display: inline-flexbox;
+	padding: 0.25rem;
 	width: 100%;
 	font-size: clamp(16px, (1em + 0.5vmin), 20px);
-	
+	text-align: center;
+	align-self: center;
+}
+
+.video_block iframe{
+	border-radius: 2%;
 }
 
 /*small screen adjustments*/

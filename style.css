@@ -2,6 +2,7 @@
 
 :root {
 	--primary: #431c6a;
+	--ligher: #7932BF;
 	--secondary: #49498b;
 	--accent: #0c0f61;
 	--dark: #180621;
@@ -9,6 +10,8 @@
 	--light: #ffffff;
 	--gray: #6b7280;
 	--success: #00ff88;
+	--green: #436A1C;
+	--darker_green: #1D3108;
 }
 
 body {
@@ -57,7 +60,9 @@ body {
 		transform: scaleX(0);
 	}
 }
-
+a{
+	text-decoration: none;
+}
 .page_title {
 	color: #ffffff;
 	background-color: #24083d;
@@ -73,11 +78,15 @@ body {
 }
 .subsection_title{
 	color: #ffffff;
-	width: 100vw;
-	margin-top: 6%;
+	outline: 5px solid rgba(0, 0, 0, 0.30);
+	margin: 6% auto 2%;
+	padding: 2vw 5vw;
+	width: 50vw;
 	text-align: center;
 	letter-spacing: 0.25rem;
 	font-size: clamp(25px, (1.5em + 2vmin), 40px);
+	border-radius: 12px;
+	backdrop-filter: contrast(110%);
 }
 
 .smaller_subsection_title{
@@ -156,9 +165,19 @@ nav {
 	text-decoration: none;
 	color: white;
 	display: inline-block;
+	
 }
 
 .btn-primary {
+	text-decoration: none;
+	padding: 1rem 2rem;
+	border: none;
+	border-radius: 50px;
+	font-size: 2rem;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	color: white;
+	display: inline-block;
 	background: linear-gradient(45deg, var(--primary), var(--accent));
 }
 
@@ -171,13 +190,13 @@ nav {
 	all: unset;
 	cursor: pointer;
 	display: flex;
-	border-radius: 3%;
+	border-radius: 6px;
 	padding: 3%;
 	text-align: center;
 	justify-self: center;
 	padding: 2%;
 	margin-top: 2%;
-	outline: solid var(--secondary) 2px;
+	outline: solid rgba(73, 73, 139, 0.8) 3px;
 
 }
 
@@ -201,7 +220,7 @@ nav {
 	margin-right: 2%;
 }
 .home_img{
-	border-radius: 3%;
+	border-radius: 6px;
 	width:45%;
 	margin: 2%;
 	outline: solid 5px var(--darker);
@@ -218,10 +237,30 @@ nav {
 	align-self: center;
 }
 .about_me img{
-	border-radius: 3%;
+	border-radius: 6px;
 	outline: 5px solid var(--darker);
 }
 
+/* icon bar */
+
+.icon-bar{
+	background-color: var(--green);
+	overflow: hidden;
+	width: 60vw;
+	margin: 0 auto;
+	justify-content: space-around;
+	display: flex;
+	padding: 2%;
+	margin-top: 3vmax;
+	border-radius: 12px;
+	outline: solid 7px var(--darker_green);
+}
+
+.icon-bar a{
+	color: white;
+	text-decoration: none;
+	font-size: clamp(30px, (1em + 2vw), 50px);
+}
 
 /* what I've done recently */
 .done_recently{
@@ -234,9 +273,9 @@ nav {
 }
 
 .done_recently img{
-	border-radius: 3%;
+	border-radius: 6px;
 	outline: 5px solid var(--darker);
-	max-height: 650px;
+	max-height: 550px;
 }
 /* on the stage page */
 .on_the_stage_posts{
@@ -272,9 +311,9 @@ nav {
 	all: unset;
 	align-self: self-end;
 	cursor: pointer;
-	border-radius: 3%;
-	padding: 2%;
-	outline: 2px solid var(--secondary);
+	border-radius: 6px;
+	padding: 3%;
+	outline: 3px solid var(--secondary);
 	transform: scale(0.75);
 	font-size: clamp(16px, (1em + 0.5vmin), 30px);
 
@@ -288,8 +327,8 @@ nav {
 .stage_post img{
 	width: 45%;
 	align-self: center;
-	border-radius: 1%;
-	outline: var(--darker) solid 5px;
+	border-radius: 6px;
+	outline: rgba(0, 0, 0, 0.40) solid 7px;
 }
 
 .hidden{
@@ -326,17 +365,17 @@ nav {
 	width: 40%;
 	align-self: center;
 	margin: 2%;
-	outline: var(--darker) solid 5px;
-	border-radius: 1%;
+	outline: rgba(0, 0, 0, 0.40) solid 7px;
+	border-radius: 6px;
 }
 
 .hidden button{
 	all: unset;
 	align-self: center;
 	cursor: pointer;
-	border-radius: 3%;
-	padding: 2%;
-	outline: 2px solid var(--secondary);
+	border-radius: 6px;
+	padding: 3%;
+	outline: 3px solid var(--secondary);
 	transform: scale(0.75);
 	font-size: clamp(16px, (1em + 0.5vmin), 30px);
 }
@@ -356,7 +395,7 @@ nav {
 	padding-left: 3rem;
 	padding-right: 3rem;
 	justify-self: center;
-	border-radius: 0.75rem;
+	border-radius: 8px;
 	outline: black 3px solid;
 	box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 	background-color: black;
@@ -373,7 +412,7 @@ nav {
 }
 
 .video_block iframe{
-	border-radius: 2%;
+	border-radius: 8px;
 }
 
 /*small screen adjustments*/

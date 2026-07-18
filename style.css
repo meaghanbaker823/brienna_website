@@ -1,8 +1,9 @@
 @charset "utf-8";
 
 :root {
-	--primary: #431c6a;
+	--primary: #401257;
 	--ligher: #7932BF;
+	--lilac: #5A3882;
 	--secondary: #49498b;
 	--accent: #0c0f61;
 	--dark: #180621;
@@ -10,8 +11,12 @@
 	--light: #ffffff;
 	--gray: #6b7280;
 	--success: #00ff88;
-	--green: #436A1C;
-	--darker_green: #1D3108;
+	--green: #234d03;
+	--darker_green: #173702;
+	--lighter_green: #4AA206;
+	--maroon: #6A1C33;
+	--yellow: #FFD700;
+	--teal: #066357
 }
 
 body {
@@ -65,7 +70,7 @@ a{
 }
 .page_title {
 	color: #ffffff;
-	background-color: #24083d;
+	background-color: var(--darker);
 	margin-top: calc(27vmin - 2vw);
 	width: 100%;
 	padding-top: 4vmin;
@@ -73,7 +78,7 @@ a{
 	text-align: center;
 	letter-spacing: 0.25rem;
 	font-size: calc(1em + 2vmin);
-	border-bottom: #180621 0.25rem solid;
+	border-bottom: black 6px solid;
 
 }
 .subsection_title{
@@ -86,7 +91,7 @@ a{
 	letter-spacing: 0.25rem;
 	font-size: clamp(25px, (1.5em + 2vmin), 40px);
 	border-radius: 12px;
-	backdrop-filter: contrast(110%);
+	backdrop-filter: contrast(115%);
 }
 
 .smaller_subsection_title{
@@ -105,6 +110,10 @@ a{
 	text-align: center;
 	font-size: clamp(16px, 1.2rem + 0.5vw, 24px);
 	line-height: 2.2rem;
+	background-color: rgba(90, 56, 130, .80);
+	border-radius: 12px;
+	line-height: 2;
+	outline: var(--yellow) 2px dotted;
 }
 /* Header */
 header {
@@ -196,7 +205,7 @@ nav {
 	justify-self: center;
 	padding: 2%;
 	margin-top: 2%;
-	outline: solid rgba(73, 73, 139, 0.8) 3px;
+	outline: solid var(--lilac) 3px;
 
 }
 
@@ -232,9 +241,19 @@ nav {
 	justify-content: space-between;
 }
 
+.about_me p{
+	background-color: rgba(90, 56, 130, .80);
+	border-radius: 12px;
+	line-height: 2;
+	outline: var(--yellow) 5px dotted;
+	padding: 5vmin;
+}
+
 .about_me_item{
 	margin: 2%;
 	align-self: center;
+	width: 46vw;
+	height: auto;
 }
 .about_me img{
 	border-radius: 6px;
@@ -244,16 +263,14 @@ nav {
 /* icon bar */
 
 .icon-bar{
-	background-color: var(--green);
 	overflow: hidden;
-	width: 60vw;
+	width: 70vw;
 	margin: 0 auto;
 	justify-content: space-around;
 	display: flex;
 	padding: 2%;
 	margin-top: 3vmax;
 	border-radius: 12px;
-	outline: solid 7px var(--darker_green);
 }
 
 .icon-bar a{
@@ -270,6 +287,19 @@ nav {
 .done_recently_item{
 	width: 50%;
 	margin: 2%;
+}
+
+.done_recently ul{
+	background-color: rgba(90, 56, 130, .80);
+	border-radius: 12px;
+	line-height: 2;
+	outline: var(--yellow) 5px dotted;
+	padding: 8vmin 0;
+	list-style-position: inside;
+}
+
+.done_recently li{
+	padding: 0 3vmin;
 }
 
 .done_recently img{
@@ -313,7 +343,7 @@ nav {
 	cursor: pointer;
 	border-radius: 6px;
 	padding: 3%;
-	outline: 3px solid var(--secondary);
+	outline: 3px solid var(--lilac);
 	transform: scale(0.75);
 	font-size: clamp(16px, (1em + 0.5vmin), 30px);
 
@@ -350,6 +380,7 @@ nav {
 	margin: 2%;
 	font-size: clamp(16px, (1em + 0.5vmin), 30px);
 	line-height: 2.5rem;
+	
 
 }
 
@@ -375,7 +406,7 @@ nav {
 	cursor: pointer;
 	border-radius: 6px;
 	padding: 3%;
-	outline: 3px solid var(--secondary);
+	outline: 3px solid var(--lilac);
 	transform: scale(0.75);
 	font-size: clamp(16px, (1em + 0.5vmin), 30px);
 }

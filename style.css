@@ -68,6 +68,19 @@ body {
 a{
 	text-decoration: none;
 }
+
+iframe{
+	width: calc(250px + 5vw);
+	height: auto;
+	aspect-ratio: 16 / 9;
+	border-radius: 8px;
+}
+
+p{
+	font-size: clamp(18px, (1em + 1.5vmin), 40px);
+	line-height: 1.6;
+}
+
 .page_title {
 	color: #ffffff;
 	background-color: var(--darker);
@@ -89,7 +102,7 @@ a{
 	width: 50vw;
 	text-align: center;
 	letter-spacing: 0.25rem;
-	font-size: clamp(25px, (1.5em + 2vmin), 40px);
+	font-size: clamp(20px, (1.5em + 2vmin), 40px);
 	border-radius: 12px;
 	backdrop-filter: contrast(115%);
 }
@@ -104,8 +117,7 @@ a{
 
 .page_description{
 	margin-top: 2%;
-	margin-left: 8%;
-	margin-right: 8%;
+	margin: 2vw;
 	padding: 2%;
 	text-align: center;
 	font-size: clamp(16px, 1.2rem + 0.5vw, 24px);
@@ -308,6 +320,19 @@ nav {
 	max-height: 550px;
 }
 /* on the stage page */
+.stage_header{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.stage_header img{
+	width: 70vw;
+	height: fit-content;
+	margin: 2vw;
+	border-radius: 12px;
+	outline: 5px solid var(--darker);
+}
 .on_the_stage_posts{
 	display: flex;
 	flex-direction: column;
@@ -414,7 +439,7 @@ nav {
 .video_blocks {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 1rem;
+	gap: 1.5rem;
 	justify-content: center;
 	padding-bottom: 2rem;
 	margin: 1rem;
@@ -442,9 +467,6 @@ nav {
 	align-self: center;
 }
 
-.video_block iframe{
-	border-radius: 8px;
-}
 
 /*small screen adjustments*/
 @media screen and (max-width: 650px){
@@ -454,4 +476,9 @@ nav {
 	.page_title{
 		margin-top: 65%;
 	}
+
+	.about_me{
+		flex-direction: column;
+	}
+	
 }

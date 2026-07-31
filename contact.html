@@ -13,6 +13,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="./style.css">
         <script type="text/javascript" src="./scripts.js"></script>
+        <link rel="stylesheet" href="./images/icons/css/all.min.css">
     </head> 
     <body>
         <div class="bg_animation">  
@@ -35,10 +36,59 @@
             <h1>Contact Me!</h1>
         </div>
         <section>
-            <ul>
-                <li>Email: <a href="briennahalterman@gmail.com">briennahalterman@gmail.com</a></li>
-                <li>Phone Number: <a href="tel:+16308049606">(630) 804-9606</a></li>
-            </ul>
+            <div id="contact">
+                <div>
+                    <a href="mailto:briennahalterman@gmail.com" title="Email Brienna!"><i class="fa-solid fa-envelope"></i></a>
+                    <p>Email Brienna!</p>
+                </div>
+                <div>
+                    <a href="tel:+16308049606" title="Call Brienna!"><i class="fa-solid fa-phone"></i></a>
+                    <p>Call Brienna!</p>
+                </div>
+                <div>
+                    <a><i class="fa-brands fa-linkedin" title="Follow Brienna on Linkedin!"></i></a>
+                    <p>Follow Brienna on Linkedin!</p>
+                </div>
+                <div>
+                    <a><i class="fa-brands fa-instagram" title="Follow Brienna on Instagram!"></i></a>
+                    <p>Follow Brienna on Instagram!</p>
+                </div>
+                <div>
+                    <a><i class="fa-brands fa-tiktok" title="Follow Brienna on TikTok!"></i></a>
+                    <p>Follow Brienna on TikTok!</p>
+                </div>
+            </div>
         </section>
+        <section>
+            <h1 class = "subsection_title">Contact</h1>
+            <div id = "form">
+                <form>
+                    <div id="form-names">
+                        <div>
+                            <label for="fname">First Name</label>
+                            <input type = "text" required>
+                        </div>
+                        <div>
+                            <label for="lname">Last Name</label>
+                            <input type="text" required>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" required>
+                    </div>
+
+                    <div>
+                    <label for="msg">Message</label>
+                    <textarea></textarea>
+                    </div>
+
+                    <input type = "submit">
+                </form>
+            </div>
+
+        </section>
+        <div style="background-color: #401257; padding-bottom: 50px;"></div>
     </body>
 </html>

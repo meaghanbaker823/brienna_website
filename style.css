@@ -215,6 +215,7 @@ nav {
 .go-to-resume{
 	all: unset;
 	cursor: pointer;
+	width: 11.5%;
 	display: flex;
 	border-radius: 6px;
 	padding: 3%;
@@ -228,6 +229,10 @@ nav {
 
 .go-to-resume:active{
 	transform: scale(0.98);
+}
+
+#resume{
+	scroll-margin-top: calc(125px + 2rem);
 }
 
 /*home page headshot and resume*/
@@ -442,9 +447,13 @@ nav {
 	border-radius: 6px;
 }
 
-.hidden button{
+.hidden a button{
 	all: unset;
+	color: white;
 	align-self: center;
+	width: 10%;
+	display: flex;
+	justify-self: center;
 	cursor: pointer;
 	border-radius: 6px;
 	padding: 3%;
@@ -452,6 +461,10 @@ nav {
 	outline: 3px solid var(--lilac);
 	font-size: clamp(16px, (1em + 0.5vmin), 30px);
 	transition: transform 0.1s ease;
+}
+
+.stage_text button{
+	scroll-margin-top: calc(450px + 2rem);
 }
 
 .hidden button:active{

@@ -84,7 +84,7 @@ p, label{
 
 
 img{
-	height: fit-content;
+	height: auto;
 }
 
 .page_title {
@@ -203,26 +203,28 @@ nav {
 	cursor: pointer;
 	transition: all 0.3s ease;
 	color: white;
-	display: inline-block;
+	display: block;
+	width: fit-content;
+	transform: scale(0.75);
+	transition: transform 0.1s ease;
 	background: linear-gradient(45deg, var(--primary), var(--accent));
 }
 
-.btn-primary:hover {
-	transform: translateY(-2px);
+.btn-primary:active {
+	transform: scale(0.73);
 	box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
 }
 
 .go-to-resume{
 	all: unset;
 	cursor: pointer;
-	width: 11.5%;
+	width: fit-content;
 	display: flex;
 	border-radius: 6px;
 	padding: 3%;
 	text-align: center;
-	justify-self: center;
 	padding: 2%;
-	margin-top: 2%;
+	margin: 2% auto;
 	outline: solid var(--lilac) 3px;
 	transition: transform 0.1s ease;
 }
@@ -237,27 +239,24 @@ nav {
 
 /*home page headshot and resume*/
 .home_pic_and_res{
-	display: flex;
-	flex-wrap: wrap;
-}
-
-.home_imgs{
-	margin-top: 0.5vh;
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 45vw 45vw;
+	grid-template-rows: auto auto;
+	gap: 2vw;
+	align-items: center;
+	margin: 2% auto;
 	justify-content: center;
+
 }
 .home_pic_and_res a{
-	display: grid;
-	justify-content: center;
-	width:45%; 
-	margin-left: 2%;
-	margin-right: 2%;
+	width: 100%; 
+	height: auto;
+	text-align: center;
 }
 .home_img{
 	border-radius: 6px;
-	width:45%;
-	margin: 2%;
+	width: 100%;
+	height: auto;
 	outline: solid 5px var(--darker);
 }
 
@@ -279,7 +278,6 @@ nav {
 	margin: 2%;
 	align-self: center;
 	width: 46vw;
-	height: fit-content;
 }
 .about_me img{
 	border-radius: 6px;
@@ -316,6 +314,7 @@ nav {
 .done_recently_item{
 	width: 50%;
 	margin: 2%;
+	height: auto;
 }
 
 .done_recently ul{
@@ -447,11 +446,11 @@ nav {
 	border-radius: 6px;
 }
 
-.hidden a button{
+.hidden a{
 	all: unset;
 	color: white;
 	align-self: center;
-	width: 10%;
+	width: fit-content;
 	display: flex;
 	justify-self: center;
 	cursor: pointer;

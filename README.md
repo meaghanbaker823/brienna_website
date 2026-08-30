@@ -1,3 +1,4 @@
+```
 - src
   - components (shared)
     - componentsPerPage (components specialized to certain pages)
@@ -9,3 +10,4 @@
   - videos
   - documents
 - README.md (explain which files she would need to edit and how)
+```

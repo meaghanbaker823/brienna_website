@@ -1,0 +1,9 @@
+>src
+    >back
+    >front
+>index.html
+>index.js
+>resources
+  >images
+  >videos
+>README.md (explain which files she would need to edit and how)

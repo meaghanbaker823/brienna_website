@@ -1,9 +1,11 @@
--->src
------>back
------>front
--->index.html
--->index.js
--->resources
----->images
----->videos
--->README.md (explain which files she would need to edit and how)
+- src
+  - components (shared)
+    - componentsPerPage (components specialized to certain pages)
+  - containers (pages)
+- index.html
+- index.js
+- resources
+  - images
+  - videos
+  - documents
+- README.md (explain which files she would need to edit and how)

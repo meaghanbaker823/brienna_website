@@ -3,7 +3,7 @@
   - styles (css for all pages)
   - components (shared)
     - componentsPerPage (components specialized to certain pages)
-  - containers (pages)
+  - pages
 - index.html
 - index.js
 - resources

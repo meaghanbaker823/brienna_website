@@ -2,7 +2,7 @@ import { useState } from 'react';
 import PropTypes from 'prop-types'; // 1. Import the PropTypes library
 import ImageList from './ImageList';
 
-export default function BlogPost({ name, role, title, img, hidden_text, imgs }) {
+export default function OnStagePost({ name, role, title_img, hidden_text, imgs }) {
   const [hidden, setHidden] = useState('hidden');
 
   const showButtonId = `hidden-${name}-b`;
@@ -17,14 +17,19 @@ export default function BlogPost({ name, role, title, img, hidden_text, imgs }) 
             <h1>{name}</h1>
             <h4>Played: {role}</h4>
           </div>
-          <img alt="A Photo" src={`/images/${title}-${img}`} />
+          <img alt="A Photo" src={`/images/${title_img}`} />
         </div>
-        <div id={hiddenClassId}>
+        <div className="hidden" id={hiddenClassId}>
           <p className="hidden-text">{hidden_text}</p>
           <ImageList className="hidden-imgs" imgs={imgs} />
-          <button id={hideButtonId} type="button" onClick={() => setHidden('hide')}>
+          <a
+            href={`#${showButtonId}`}
+            id={hideButtonId}
+            type="button"
+            onClick={() => setHidden('hide')}
+          >
             View less
-          </button>
+          </a>
         </div>
       </div>
     );
@@ -40,18 +45,17 @@ export default function BlogPost({ name, role, title, img, hidden_text, imgs }) 
             View more
           </button>
         </div>
-        <img alt="A photo" src={`/images/${title}-${img}`} />
+        <img alt="A photo" src={`/images/${title_img}`} />
       </div>
     </div>
   );
 }
 
 // 2. Define the expected types for each prop
-BlogPost.propTypes = {
+OnStagePost.propTypes = {
   name: PropTypes.string.isRequired,
   role: PropTypes.string.isRequired,
-  title: PropTypes.string.isRequired,
-  img: PropTypes.string.isRequired,
+  title_img: PropTypes.string.isRequired,
   hidden_text: PropTypes.string.isRequired,
   imgs: PropTypes.arrayOf(PropTypes.string).isRequired,
 };

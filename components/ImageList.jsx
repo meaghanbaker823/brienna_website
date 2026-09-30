@@ -4,7 +4,12 @@ export default function ImageList({ imgs, className = '' }) {
   return (
     <div className={className}>
       {imgs.map((img) => (
-        <img key={img} alt={`Stage moment ${img.split('.')[0]}`} src={`/images/${img}`} />
+        <img
+          key={img}
+          alt={`Image ${img.split('.')[0]}`}
+          className="hidden-img"
+          src={`/images/${img}`}
+        />
       ))}
     </div>
   );

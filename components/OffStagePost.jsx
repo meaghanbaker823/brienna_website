@@ -10,43 +10,27 @@ export default function OffStagePost({ name, location, title_img, hidden_text, i
   const hideButtonId = `hidden-${name}-a`;
 
   if (hidden === 'show') {
-    // if no title img, dont render a title img or img list
-    if (!title_img) {
-      return (
-        <div className="entire_stage_post">
-          <div className="stage_post" style={{ flexDirection: 'column' }}>
-            <div className="stage_text" style={{ width: '100%' }}>
-              <h1>{name}</h1>
-              <h4>At {location}</h4>
-            </div>
-          </div>
-          <div className="hidden" id={hiddenClassId}>
-            <p className="hidden-text">{hidden_text}</p>
-            <a
-              href={`#${showButtonId}`}
-              id={hideButtonId}
-              type="button"
-              onClick={() => setHidden('hide')}
-            >
-              View less
-            </a>
-          </div>
-        </div>
-      );
-    }
     // if title img passed, show img
     return (
       <div className="entire_stage_post">
         <div className="stage_post">
-          <div className="stage_text">
-            <h1>{name}</h1>
-            <h4>At {location}</h4>
-          </div>
-          <img alt="A Photo" src={`/images/${title_img}`} />
+          {!title_img && (
+            <div className="stage_text" style={{ width: '100%' }}>
+              <h1>{name}</h1>
+              <h4>{location}</h4>
+            </div>
+          )}
+          {title_img && (
+            <div className="stage_text" style={{ width: '100%' }}>
+              <h1>{name}</h1>
+              <h4>{location}</h4>
+            </div>
+          )}
+          {title_img && <img alt="A photo" src={`/images/${title_img}`} />}
         </div>
         <div className="hidden" id={hiddenClassId}>
           <p className="hidden-text">{hidden_text}</p>
-          <ImageList className="hidden-imgs" imgs={imgs} />
+          {title_img && <ImageList className="hidden-imgs" imgs={imgs} />}
           <a
             href={`#${showButtonId}`}
             id={hideButtonId}
@@ -60,36 +44,35 @@ export default function OffStagePost({ name, location, title_img, hidden_text, i
     );
   }
 
-  // if hidden, return without images
-
-  // if title img not passed, render without img
-  if (!title_img) {
-    return (
-      <div className="entire_stage_post">
-        <div className="stage_post" style={{ flexDirection: 'column' }}>
-          <div className="stage_text" style={{ width: '100%' }}>
-            <h1>{name}</h1>
-            <h4>At {location}</h4>
-            <button id={showButtonId} type="button" onClick={() => setHidden('show')} style={{ alignSelf: 'center' }}>
-              View more
-            </button>
-          </div>
-        </div>
-      </div>
-    );
-  }
-  // if title img passed, render title img
+  // if hidden
+  // if no title img, need different button styling
   return (
     <div className="entire_stage_post">
       <div className="stage_post">
-        <div className="stage_text">
-          <h1>{name}</h1>
-          <h4>At {location}</h4>
-          <button id={showButtonId} type="button" onClick={() => setHidden('show')}>
-            View more
-          </button>
-        </div>
-        <img alt="A photo" src={`/images/${title_img}`} />
+        {title_img && (
+          <div className="stage_text">
+            <h1>{name}</h1>
+            <h4>{location}</h4>
+            <button id={showButtonId} type="button" onClick={() => setHidden('show')}>
+              View more
+            </button>
+          </div>
+        )}
+        {!title_img && (
+          <div className="stage_text" style={{ width: '100%' }}>
+            <h1>{name}</h1>
+            <h4>{location}</h4>
+            <button
+              id={showButtonId}
+              style={{ alignSelf: 'center' }}
+              type="button"
+              onClick={() => setHidden('show')}
+            >
+              View more
+            </button>
+          </div>
+        )}
+        {title_img && <img alt="A photo" src={`/images/${title_img}`} />}
       </div>
     </div>
   );

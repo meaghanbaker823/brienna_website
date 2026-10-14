@@ -1,9 +1,24 @@
 import OffStagePost from '../components/OffStagePost';
 import ResumeButton from '../components/ResumeButton';
+import PageHeader from '../components/PageHeader';
 
 export default function OffStage() {
   return (
     <div>
+      <PageHeader title="Off the Stage" />
+      <div className="stage_header">
+        <p className="page_description">
+          Brienna has been on the stage many times between various theater productions, opera
+          performances, and opera workshops. More text to fill the space. More text to fill the
+          space. More text to fill the space. More text to fill the space. More text to fill the
+          space. More text to fill the space. More text to fill the space. More text to fill the
+          space. More text to fill the space. More text to fill the space.
+        </p>
+        <img alt="Brienna on stage" src="/images/IMG_0537.JPG" />
+        <p>Description for highlight image</p>
+      </div>
+      <div style={{background: `linear-gradient(#401257, #210c61)`}}> 
+      <ResumeButton />
       <section className="on_the_stage_posts">
         <OffStagePost
           hidden_text="At Other Internship, Briennna has contriuted a lot, including many social media posts. In her time there, she has created over x social posts. More text to fill space."
@@ -63,6 +78,7 @@ export default function OffStage() {
           Download Resume
         </a>
       </section>
+      </div>
     </div>
   );
 }

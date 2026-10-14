@@ -1,8 +1,10 @@
 import ResumeButton from '../components/ResumeButton';
 import OnStagePost from '../components/OnStagePost';
+import PageHeader from '../components/PageHeader';
 export default function OnStage() {
   return (
     <section style={{ background: 'linear-gradient(#401257, #210c61)' }}>
+      <PageHeader title="On the Stage" />
       <div className="stage_header">
         <p className="page_description">
           Brienna has been on the stage many times between various theater productions, opera

@@ -1,3 +1,5 @@
+import AboutMe from '../components/AboutMe';
+
 export default function Home() {
   return (
     <div>
@@ -35,19 +37,11 @@ export default function Home() {
       </div>
 
       <h1 className="subsection_title">About Me</h1>
-      <section className="about_me">
-        <img
-          alt="Brienna Halterman"
-          className="about_me_item"
-          src="/images/IMG_0537.JPG"
-          style={{ width: '45%' }}
-        />
-        <p className="about_me_item" style={{ textAlign: 'center', fontSize: 'large' }}>
-          Hello! My name is Brienna Halterman and I am an aspiring singer/actor from the Chicagoland
-          area. I’m currently attending Western Michigan University with the goal of graduating with
-          a Bachelor of Science in Music Performance: Vocal and Digital Media & Journalism.
-        </p>
-      </section>
+      <AboutMe
+        alternate="Brienna Halterman"
+        img_src="IMG_0537.JPG"
+        paragraph="Hello! My name is Brienna Halterman and I am an aspiring singer/actor from the Chicagoland area. I’m currently attending Western Michigan University with the goal of graduating with a Bachelor of Science in Music Performance: Vocal and Digital Media & Journalism."
+      />
 
       <h1 className="subsection_title">What Have I Done Recently</h1>
       <div className="done_recently">

@@ -23,7 +23,6 @@ export default function App() {
         <Route element={<ContactMe />} path="/contact-me" />
       </Routes>
       <Footer />
-      <div style={{ backgroundColor: '#401257', paddingBottom: '50px' }} />
     </div>
   );
 }

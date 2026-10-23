@@ -1,6 +1,7 @@
 export default function Footer() {
   return (
-    <div>
+    <div style={{ background: `#210c61` }}>
+      <div style={{ backgroundColor: `#210c61`, paddingBottom: `15px` }} />
       <div className="icon-bar">
         <a href="mailto:briennahalterman@gmail.com" title="Email Brienna!">
           <i className="fa-solid fa-envelope" />
@@ -18,7 +19,7 @@ export default function Footer() {
           <i className="fa-brands fa-tiktok" title="Follow Brienna on TikTok!" />
         </a>
       </div>
-      <div style={{paddingBottom: '50px' }} />
+      <div style={{ paddingBottom: '50px' }} />
     </div>
   );
 }

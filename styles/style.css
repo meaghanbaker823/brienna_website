@@ -206,13 +206,17 @@ nav {
 	display: block;
 	width: fit-content;
 	transform: scale(0.75);
-	transition: transform 0.1s ease;
+	transition: transform 0.2s ease;
+	outline: var(--darker) solid 4px;
 	background: linear-gradient(45deg, var(--primary), var(--accent));
 }
 
 .btn-primary:active {
 	transform: scale(0.73);
-	box-shadow: 0 10px 30px rgba(0, 255, 255, 0.3);
+}
+
+.btn-primary:hover {
+	transform: scale(0.79);
 }
 
 .go-to-resume{
@@ -226,11 +230,11 @@ nav {
 	padding: 2%;
 	margin: 2% auto;
 	outline: solid var(--lilac) 3px;
-	transition: transform 0.1s ease;
+	transition: transform 0.2s ease;
 }
 
-.go-to-resume:active{
-	transform: scale(0.98);
+.go-to-resume:hover{
+	transform: scale(1.04);
 }
 
 #resume{
@@ -387,11 +391,11 @@ nav {
 	outline: 3px solid var(--lilac);
 	transform: scale(0.75);
 	font-size: clamp(16px, (1em + 0.5vmin), 30px);
-	transition: transform 0.1s ease;
+	transition: transform 0.2s ease;
 }
 
-.stage_text button:active{
-	transform: scale(.73);
+.stage_text button:hover{
+	transform: scale(.79);
 }
 
 
@@ -459,7 +463,11 @@ nav {
 	transform: scale(0.75);
 	outline: 3px solid var(--lilac);
 	font-size: clamp(16px, (1em + 0.5vmin), 30px);
-	transition: transform 0.1s ease;
+	transition: transform 0.2s ease;
+}
+
+.hidden a:hover{
+	transform: scale(0.79);
 }
 
 .stage_text button{

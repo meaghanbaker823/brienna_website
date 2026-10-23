@@ -2,7 +2,7 @@ import YouTube from 'react-youtube';
 import PropTypes from 'prop-types';
 import { useRef } from 'react';
 
-export default function Video({ video_id, video_title}) {
+export default function Video({ video_id, video_title }) {
   // set the if playing or not
   const playerRef = useRef(null);
 
@@ -35,7 +35,7 @@ export default function Video({ video_id, video_title}) {
 
   return (
     <div className="video_block" onMouseEnter={handleStartPlaying} onMouseLeave={handleStopPlaying}>
-      <YouTube opts={options} videoId={video_id} onReady={handleReady}/>
+      <YouTube opts={options} videoId={video_id} onReady={handleReady} />
       <p>{video_title}</p>
     </div>
   );

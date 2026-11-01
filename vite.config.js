@@ -8,4 +8,5 @@ export default defineConfig({
   // the site root in dev (`npm run dev`) and is copied into `dist` on build,
   // so URLs like `/images/IMG_0537.JPG` work in both.
   publicDir: 'resources',
+  base: '/brienna_website/',
 });

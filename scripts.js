@@ -1,44 +1,74 @@
-import { tsParticles } from '@tsparticles/engine';
-import { loadSlim } from '@tsparticles/slim';
+import { tsParticles } from "@tsparticles/engine";
+import { loadFull } from "tsparticles";
 
-(async () => {
-  // 1. Register the slim bundle features
-  await loadSlim(tsParticles);
+await loadFull(tsParticles);
 
-  // 2. Load the particle configuration into your container ID
-  await tsParticles.load({
-    id: 'tsparticles',
-    options: {
-      background: {
-        color: {
-          value: '#0b1020',
+await tsParticles.load({
+  id: "tsparticles",
+  options: {
+    background: {
+      color: "#401257",
+    },
+    particles: {
+      number: {
+        value: 120,
+        density: {
+          enable: true,
         },
       },
-      particles: {
-        number: {
-          value: 80,
+      color: {
+        // Mix pure white with soft gold and ice-blue tints
+        value: ["#ffffff", "#fff4b8", "#d4f1ff"],
+      },
+      shape: {
+        type: "star",
+        options: {
+          star: {
+            sides: 4, // Creates a classic 4-point sparkle shape
+            inset: 2, // Sharpens the inner corners for a sleeker glint
+          },
         },
-        color: {
-          value: '#ffffff',
-        },
-        links: {
+      },
+      opacity: {
+        value: { min: 0.1, max: 1 },
+        animation: {
           enable: true,
-          distance: 150,
-          color: '#ffffff',
-          opacity: 0.4,
-          width: 1,
+          speed: 4,
+          sync: false, // Prevents all particles from fading together
         },
-        move: {
+      },
+      size: {
+        value: { min: 1, max: 4 },
+        animation: {
           enable: true,
           speed: 2,
+          sync: false,
         },
-        size: {
-          value: { min: 1, max: 3 },
+      },
+      twinkle: {
+        particles: {
+          enable: true,
+          frequency: 0.05, // Controls how often a sudden bright flash occurs
+          opacity: 1,
+          color: {
+            value: "#ffffff",
+          },
+        },
+      },
+      move: {
+        enable: true,
+        speed: 0.4, // Slow, gentle floating motion
+        direction: "none",
+        random: true,
+        outModes: {
+          default: "out",
         },
       },
     },
-  });
-})();
+    detectRetina: true,
+  },
+});
+
 
 // For the view more/view less for on the stage and off the stage
 document.addEventListener('click', (event) => {

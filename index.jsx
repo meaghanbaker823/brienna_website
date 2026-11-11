@@ -5,10 +5,9 @@ import App from './App';
 import './scripts.js';
 import './styles/style.css';
 
-const root = createRoot(document.getElementById('root'));
-root.render(
+createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename='/brienna_website'>
       <App />
     </BrowserRouter>
   </StrictMode>

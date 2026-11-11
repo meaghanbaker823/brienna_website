@@ -93,6 +93,7 @@ export default [
       'prettier/prettier': [
         'error',
         {
+          parser: 'babel',
           semi: true,
           trailingComma: 'es5',
           singleQuote: true,
@@ -102,6 +103,9 @@ export default [
           jsxSingleQuote: false,
           bracketSpacing: true,
           arrowParens: 'always',
+        },
+        {
+          usePrettierrc: false,
         },
       ],
     },

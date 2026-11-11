@@ -1,3 +1,45 @@
+import { tsParticles } from '@tsparticles/engine';
+import { loadSlim } from '@tsparticles/slim';
+
+(async () => {
+  // 1. Register the slim bundle features
+  await loadSlim(tsParticles);
+
+  // 2. Load the particle configuration into your container ID
+  await tsParticles.load({
+    id: 'tsparticles',
+    options: {
+      background: {
+        color: {
+          value: '#0b1020',
+        },
+      },
+      particles: {
+        number: {
+          value: 80,
+        },
+        color: {
+          value: '#ffffff',
+        },
+        links: {
+          enable: true,
+          distance: 150,
+          color: '#ffffff',
+          opacity: 0.4,
+          width: 1,
+        },
+        move: {
+          enable: true,
+          speed: 2,
+        },
+        size: {
+          value: { min: 1, max: 3 },
+        },
+      },
+    },
+  });
+})();
+
 // For the view more/view less for on the stage and off the stage
 document.addEventListener('click', (event) => {
   // Click the view more button

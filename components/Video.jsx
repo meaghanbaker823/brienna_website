@@ -28,7 +28,7 @@ export default function Video({ video_id, video_title }) {
   const options = {
     playerVars: {
       autoplay: 0,
-      controls: 1,
+      controls: 0,
       mute: 1,
     },
   };

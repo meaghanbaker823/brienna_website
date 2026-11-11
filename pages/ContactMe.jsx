@@ -1,3 +1,4 @@
+import Form from '../components/Form';
 export default function ContactMe() {
   return (
     <div>
@@ -41,32 +42,7 @@ export default function ContactMe() {
         </section>
         <section>
           <h1 className="subsection_title">Contact</h1>
-          <div id="form">
-            <form>
-              <div id="form-names">
-                <div>
-                  <label htmlFor="fname">First Name</label>
-                  <input required type="text" />
-                </div>
-                <div>
-                  <label htmlFor="lname">Last Name</label>
-                  <input required type="text" />
-                </div>
-              </div>
-
-              <div>
-                <label htmlFor="email">Email</label>
-                <input required type="email" />
-              </div>
-
-              <div>
-                <label htmlFor="msg">Message</label>
-                <textarea />
-              </div>
-
-              <input type="submit" />
-            </form>
-          </div>
+          <Form />
         </section>
       </div>
     </div>

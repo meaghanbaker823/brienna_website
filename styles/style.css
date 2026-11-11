@@ -376,6 +376,7 @@ nav {
 	margin-top: 2%;
 	margin-bottom: 2%;
 	transition: backdrop-filter 0.2s ease;
+	padding: 3% 0%;
 }
 
 .stage_text{
@@ -567,7 +568,9 @@ form{
 	align-items: flex-start;
 	border-radius: 12px;
 	background-color: var(--lilac);
+	align-items: center;
 }
+
 
 input[type="text"], input[type="email"], textarea{
 	width: 100%;
@@ -607,13 +610,6 @@ input[type="submit"]:hover{
 input[type="submit"]:active{
 	background: var(--highlight-lilac);
 	transform: scale(0.98);
-}
-
-form #form-names{
-	display: flex;
-	flex-direction: row;
-	gap: clamp(30px, calc(4em + 0.5vw), 10000px);
-	
 }
 
 form div{

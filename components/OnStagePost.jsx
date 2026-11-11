@@ -17,7 +17,7 @@ export default function OnStagePost({ name, role, title_img, hidden_text, imgs }
             <h1>{name}</h1>
             <h4>Played: {role}</h4>
           </div>
-          <img alt="A Photo" src={`/images/${title_img}`} />
+          <img alt={`A photo of the production of ${name}`} src={`/images/${title_img}`} />
         </div>
         <div className="hidden" id={hiddenClassId}>
           <p className="hidden-text">{hidden_text}</p>
@@ -45,7 +45,7 @@ export default function OnStagePost({ name, role, title_img, hidden_text, imgs }
             View more
           </button>
         </div>
-        <img alt="A photo" src={`/images/${title_img}`} />
+        <img alt={`A photo of the production of ${name}`} src={`/images/${title_img}`} />
       </div>
     </div>
   );

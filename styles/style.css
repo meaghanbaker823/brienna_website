@@ -23,7 +23,7 @@
 
 body {
 	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-	padding-top: 90px;
+	padding-top: 0px;
 	background-color: #401257;
 	color: var(--light);
 	overflow-x: hidden;
@@ -134,7 +134,7 @@ img{
 }
 /* Header */
 header {
-	position: fixed;
+	position: sticky;
 	top: 0;
 	width: 100%;
 	background: #401257;
@@ -147,12 +147,17 @@ header {
 	color: #ffffff;
 	text-decoration: none;
 }
+nav h1 {
+	font-size: 1.15rem;
+	margin: 0;
+	white-space: nowrap;
+}
 nav {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: center;
-	padding: 1rem ;
+	padding: 0.4rem 1rem;
 	max-width: 20000px;
 	margin: 0 auto;
 
@@ -169,7 +174,7 @@ nav {
 	text-decoration: none;
 	transition: all 0.3s ease;
 	position: relative;
-	padding: 0.6rem 1.2rem;
+	padding: 0.35rem 0.9rem;
 	border-radius: 25px;
 	font-weight: 500;
 	font-size: 0.95rem;

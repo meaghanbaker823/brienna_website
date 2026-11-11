@@ -7,7 +7,7 @@ await tsParticles.load({
   id: "tsparticles",
   options: {
     background: {
-      color: "#401257",
+      opacity: 0,
     },
     particles: {
       number: {
@@ -33,7 +33,7 @@ await tsParticles.load({
         value: { min: 0.1, max: 1 },
         animation: {
           enable: true,
-          speed: 4,
+          speed: 1.5,
           sync: false, // Prevents all particles from fading together
         },
       },

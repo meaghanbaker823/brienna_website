@@ -300,21 +300,20 @@ nav {
 
 .icon-bar{
 	overflow: hidden;
-	width: 70vw;
+	width: 60vw;
 	margin: 0 auto;
 	justify-content: space-around;
 	display: flex;
 	padding: 2%;
 	margin-top: 3vmax;
 	border-radius: 12px;
-	background-color: var(--lilac);
-	outline: 2px dotted var(--yellow);
+	
 }
 
 .icon-bar a{
 	color: white;
 	text-decoration: none;
-	font-size: clamp(30px, (1em + 2vw), 50px);
+	font-size: clamp(15px, (1em + 1vw), 40px);
 	cursor: pointer;
 }
 

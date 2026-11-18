@@ -7,7 +7,7 @@ import './styles/style.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter basename='/brienna_website'>
+    <BrowserRouter basename="/brienna_website">
       <App />
     </BrowserRouter>
   </StrictMode>

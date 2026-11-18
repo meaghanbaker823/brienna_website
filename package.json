@@ -29,11 +29,16 @@
     "@tsparticles/engine": "^4.5.4",
     "@tsparticles/react": "^4.5.4",
     "@tsparticles/slim": "^4.5.4",
+    "motion": "^14.14.0",
     "prop-types": "^15.8.1",
     "react": "^19.3.0",
     "react-dom": "^19.3.0",
     "react-router-dom": "^7.18.4",
     "react-youtube": "^10.1.0",
     "tsparticles": "^4.5.4"
+  },
+  "allowScripts": {
+    "@tsparticles/engine@4.5.4": true,
+    "fsevents@2.3.3": true
   }
 }

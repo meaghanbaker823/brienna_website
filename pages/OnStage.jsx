@@ -7,7 +7,12 @@ export default function OnStage() {
       <PageHeader title="On the Stage" />
       <div className="stage_header">
         <p className="page_description">
-          Brienna has performed in over 30 theatre productions since finding her passion for the stage at 15 years old. With roles ranging from big to small, Brienna is so grateful to have had the opportunities to grow as an actor, musician, and person through performing. On a different kind of stage, Brienna has performed the National Anthem at multiple events such as Western Michigan University’s sporting events, Addison Park District’s 2026 POW! 5k, and the Addison Township Alliance’s 2026 Battle of the Badges.
+          Brienna has performed in over 30 theatre productions since finding her passion for the
+          stage at 15 years old. With roles ranging from big to small, Brienna is so grateful to
+          have had the opportunities to grow as an actor, musician, and person through performing.
+          On a different kind of stage, Brienna has performed the National Anthem at multiple events
+          such as Western Michigan University’s sporting events, Addison Park District’s 2026 POW!
+          5k, and the Addison Township Alliance’s 2026 Battle of the Badges.
         </p>
         <img alt="Brienna on stage" src="/images/IMG_0537.JPG" />
         <p>Description for highlight image</p>

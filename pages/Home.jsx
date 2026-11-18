@@ -1,4 +1,5 @@
 import AboutMe from '../components/AboutMe';
+import HomeRes from '../components/HomeRes';
 
 export default function Home() {
   return (
@@ -21,35 +22,8 @@ export default function Home() {
           <p>Description for highlight image</p>
         </div>
 
-        <h1 className="subsection_title">Headshot and Resume</h1>
-        <div className="home_pic_and_res">
-          <img
-            alt="Brienna Halterman headshot"
-            className="home_img"
-            src="/images/brienna_halterman_headshot1.JPG"
-          />
-          <img
-            alt="Brienna Halterman creative resume"
-            className="home_img"
-            src="/documents/brienna_halterman_creative_resume_img.png"
-          />
-          <a
-            className="btn-primary"
-            download="Brienna_Halterman_Headshot"
-            href="/images/brienna_halterman_headshot1.JPG"
-          >
-            Download Headshot
-          </a>
-          <a
-            className="btn-primary"
-            download="Brienna_Halterman_Resume"
-            href="/documents/brienna_halterman_creative_resume.pdf"
-          >
-            Download Resume
-          </a>
-        </div>
-
-        <h1 className="subsection_title">About Me</h1>
+        <HomeRes />
+        
         <AboutMe
           alternate="Brienna Halterman"
           img_src="IMG_0537.JPG"

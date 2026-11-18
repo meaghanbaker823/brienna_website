@@ -1,10 +1,10 @@
-import { tsParticles } from "@tsparticles/engine";
-import { loadFull } from "tsparticles";
+import { tsParticles } from '@tsparticles/engine';
+import { loadFull } from 'tsparticles';
 
 await loadFull(tsParticles);
 
 await tsParticles.load({
-  id: "tsparticles",
+  id: 'tsparticles',
   options: {
     background: {
       opacity: 0,
@@ -18,10 +18,10 @@ await tsParticles.load({
       },
       color: {
         // Mix pure white with soft gold and ice-blue tints
-        value: ["#ffffff", "#fff4b8", "#d4f1ff"],
+        value: ['#ffffff', '#fff4b8', '#d4f1ff'],
       },
       shape: {
-        type: "star",
+        type: 'star',
         options: {
           star: {
             sides: 4, // Creates a classic 4-point sparkle shape
@@ -51,24 +51,23 @@ await tsParticles.load({
           frequency: 0.05, // Controls how often a sudden bright flash occurs
           opacity: 1,
           color: {
-            value: "#ffffff",
+            value: '#ffffff',
           },
         },
       },
       move: {
         enable: true,
         speed: 0.4, // Slow, gentle floating motion
-        direction: "none",
+        direction: 'none',
         random: true,
         outModes: {
-          default: "out",
+          default: 'out',
         },
       },
     },
     detectRetina: true,
   },
 });
-
 
 // For the view more/view less for on the stage and off the stage
 document.addEventListener('click', (event) => {
